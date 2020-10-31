@@ -1,0 +1,776 @@
+// fonts
+
+@font-face {
+    font-family: 'DIN Pro Bold';
+    src: url('../assets/fonts/DINPro-Bold.eot');
+    src: url('../assets/fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../assets/fonts/DINPro-Bold.woff') format('woff'),
+        url('../assets/fonts/DINPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Black';
+    src: url('../assets/fonts/DINPro-Black.eot');
+    src: url('../assets/fonts/DINPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DINPro-Black.woff2') format('woff2'),
+        url('../assets/fonts/DINPro-Black.woff') format('woff'),
+        url('../assets/fonts/DINPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Medium';
+    src: url('../assets/fonts/DINPro-Medium.eot');
+    src: url('../assets/fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../assets/fonts/DINPro-Medium.woff') format('woff'),
+        url('../assets/fonts/DINPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Light';
+    src: url('../assets/fonts/DINPro-Light.eot');
+    src: url('../assets/fonts/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DINPro-Light.woff2') format('woff2'),
+        url('../assets/fonts/DINPro-Light.woff') format('woff'),
+        url('../assets/fonts/DINPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DIN Pro Regular';
+    src: url('../assets/fonts/DINPro.eot');
+    src: url('../assets/fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/DINPro.woff2') format('woff2'),
+        url('../assets/fonts/DINPro.woff') format('woff'),
+        url('../assets/fonts/DINPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+ul {
+    list-style: none;
+}
+
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #282828;
+    font-family: 'DIN Pro Light', sans-serif;
+}
+
+.header-button,
+.header-menu__mobile-button {
+    font-family: 'DIN Pro Regular', sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #ca3232;
+    color: #fff;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+input {
+    font-size: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    padding: 10px 80px 10px 15px;
+    background-color: #f3f3f3;
+    // position: relative;
+
+    &::placeholder {
+        font-family: 'DIN Pro Regular', sans-serif;
+    }
+}
+
+body {
+    font-family: 'DIN Pro Regular', sans-serif;
+    overflow-x: hidden;
+
+    .header {
+        margin-top: 20px;
+
+        .header-content__nav,
+        .header-menu__mobile-nav {
+            background-color: #f3f3f3;
+
+            nav a {
+                display: block;
+                transition: .3s linear;
+            }
+
+            nav li:hover>.submenu {
+                visibility: visible;
+                opacity: 1;
+                transform: translateY(0px);
+            }
+
+            .topmenu {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & .active,
+                &>li>a:hover,
+                .submenu li a:hover {
+                    color: #ddbe86;
+                }
+
+                &>li {
+                    display: inline-block;
+                    position: relative;
+
+                    &:last-child {
+                        border-right: 1px solid #ECF1F2;
+                    }
+
+                    &>a {
+                        padding: 20px 0;
+                    }
+                }
+
+                .submenu {
+                    position: absolute;
+                    left: -1px;
+                    z-index: 5;
+                    width: 180px;
+                    border-bottom: 1px solid #ECF1F2;
+                    visibility: hidden;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    transition: .3s ease-in-out;
+
+                    li {
+                        position: relative;
+                    }
+
+                    a {
+                        background: white;
+                        border-top: 1px solid #ECF1F2;
+                        border-right: 1px solid #ECF1F2;
+                        border-left: 1px solid #ECF1F2;
+                        color: #1c1c1c;
+                        text-align: left;
+                        font-size: 14px;
+                        letter-spacing: 1px;
+                        padding: 10px 20px;
+                    }
+
+                    .submenu {
+                        position: absolute;
+                        top: 0;
+                        left: calc(100% - 1px);
+                    }
+                }
+            }
+        }
+
+        &-top {
+            margin-bottom: 20px;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &__logo {
+                img {
+                    max-width: 110px;
+                    max-height: 51px;
+                }
+            }
+
+            &__mail,
+            &__phone,
+            &__search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 5px;
+                }
+            }
+
+            &__mail {
+                margin-right: 20%;
+            }
+
+            &__search {
+                position: relative;
+                cursor: pointer;
+
+                img {
+                    position: absolute;
+                    // top: 25%;
+                    right: 5px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+
+            &__menu {
+                display: none;
+
+                .lines {
+                    cursor: pointer;
+                }
+
+                .line {
+                    width: 30px;
+                    height: 3px;
+                    border-radius: 10px;
+                    background: #000;
+                    margin-bottom: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        &-content {
+
+            &__services {
+                margin-top: 30px;
+
+                .services-list {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .service {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #424a4b;
+                        max-width: 230px;
+
+                        &-image {
+                            img {
+                                width: 41px;
+                                height: 41px;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        &-text {
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-menu__mobile {
+            width: 315px;
+            height: 100%;
+            background-color: white;
+            position: fixed;
+            top: 0;
+            right: -315px;
+            transition: all ease .6s;
+            // display: flex;
+            // flex-direction: column;
+            // align-items: flex-start;
+
+            &-phone,
+            &-mail,
+            &-search {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                    margin-right: 5px;
+                }
+            }
+
+            &-search {
+                position: relative;
+                cursor: pointer;
+
+                input {
+                    background-image: url(../assets/img/header/search.svg);
+                    background-position: 95% 50%;
+                    background-repeat: no-repeat;
+                    background-size: 18px;
+                }
+            }
+
+            nav {
+
+                // margin-top: 50px;
+                .topmenu {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    li {
+                        // min-width: 100%;
+                        // padding: 0 15px;
+                    }
+
+                    .submenu {
+                        left: 300px;
+                        top: 15px;
+                    }
+                }
+            }
+
+            .header-menu__mobile-close {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                cursor: pointer;
+
+                .line {
+                    position: absolute;
+                    top: 20px;
+                    right: 10px;
+                    width: 30px;
+                    height: 3px;
+                    background-color: #000;
+                    transform: rotate(45deg);
+
+                    &:last-child {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .main {
+        margin-top: 20px;
+
+        .devices {
+            background: url(../assets/img/devices/bg.png) no-repeat center;
+            min-height: 600px;
+
+            .devices-slider {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-top: 160px;
+
+
+                .arrow-back,
+                .arrow-next {
+                    cursor: pointer;
+
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                .devices-window {
+                    width: 800px;
+                    margin: 0 370px 0 80px;
+                    overflow: hidden;
+
+                    .devices-list {
+                        display: flex;
+                        transition: all 0.4s ease;
+
+                        .device {
+                            min-width: 800px;
+
+                            &-text {
+                                color: #282828;
+                                font-size: 30px;
+                                max-width: 500px;
+                                margin-bottom: 20px;
+                            }
+
+                            &-button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                font-family: 'DIN Pro Medium', sans-serif;
+                                border: none;
+                                border-radius: 8px;
+                                outline: none;
+                                background: #ca3232;
+                                padding: 12px 20px;
+                                font-size: 18px;
+                                color: #fff;
+                                cursor: pointer;
+
+                                img {
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .categories {
+            padding: 20px 0;
+
+            &-list {
+                margin-top: 70px;
+                display: flex;
+                flex-wrap: wrap;
+
+                .category {
+                    color: #333333;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #f0f2f3;
+                    margin: 10px;
+                    min-height: 240px;
+                    width: 300px;
+                    padding: 30px 0 0 30px;
+
+
+                    &-text {
+                        font-family: 'DIN Pro Medium';
+                        font-size: 20px;
+                        max-width: 180px;
+
+                        p {
+                            min-height: 110px;
+                        }
+
+                        &__link {
+                            a {
+                                font-family: 'DIN Pro Bold', sans-serif;
+                                color: #ca3232;
+                                font-size: 18px;
+                                display: flex;
+                                align-items: center;
+
+                                img {
+                                    width: 14px;
+                                    height: 14px;
+                                    margin-left: 8px;
+                                }
+                            }
+
+                        }
+                    }
+
+                    &:first-child,
+                    &:nth-child(2) {
+                        min-width: 460px;
+                    }
+                }
+            }
+        }
+
+        .offers {
+            color: #282828;
+
+            .container {}
+
+            &-list {
+                display: flex;
+                justify-content: center;
+
+                // align-items: center;
+                .hot-offer {
+                    .offer {
+                        background-color: #f3f3f3;
+                        padding: 50px 50px;
+
+                        &-text {
+                            font-family: 'DIN Pro Medium', sans-serif;
+                            font-size: 20px;
+                            max-width: 450px;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+
+                .other-offers {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+
+                    .offer {
+                        background-color: #f3f3f3;
+                        padding: 10px;
+                        margin: 10px;
+                        margin-top: 0;
+                        min-width: 250px;
+
+                        &-wrap {
+                            padding: 30px;
+                            background-color: #fff;
+                        }
+
+                        &-text {
+                            max-width: 150px;
+                            min-height: 60px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .about {
+            margin-top: 100px;
+            padding: 20px 0;
+            color: #424a4b;
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-text {
+                flex-basis: 50%;
+                margin-right: 20px;
+
+                h2 {
+                    font-family: 'DIN Pro Black', sans-serif;
+                    font-size: 54px;
+                    margin-bottom: 20px;
+
+                    span {
+                        color: #ca3232;
+                    }
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            &-product {
+                min-width: 600px;
+                min-height: 400px;
+                padding: 20px;
+                background: url(../assets/img/about/product.png) no-repeat center;
+
+                &__text {
+                    font-size: 30px;
+                    margin-bottom: 10px;
+                }
+
+                &__link {
+                    .header-button {
+                        margin-left: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 18px;
+                            height: 18px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .clients {
+            margin-top: 50px;
+
+            .container {}
+
+            .section-title {
+                h3:first {
+                    font-size: 40px;
+                }
+
+                &__bar {
+                    width: 35px;
+                    height: 5px;
+                    border-radius: 50px;
+                    background: #ca3232;
+                    display: block;
+                    margin: 20px auto;
+                }
+            }
+
+            &-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                color: #282828;
+
+                .client {
+                    margin: 10px 10px 50px 10px;
+
+                    &-image {
+                        margin-bottom: 20px;
+                    }
+
+                    &-text {
+                        font-family: 'DIN Pro Bold', sans-serif;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        background-color: #282b32;
+        color: #fff;
+        padding: 25px 0 10px 0;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .legal-info {
+                .logo {
+                    margin-bottom: 20px;
+                }
+
+                .policy {
+                    color: #aaaaaa;
+
+                    * {
+                        margin: 5px 0;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        max-width: 330px;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        color: #aaaaaa;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .links {
+                display: flex;
+                justify-content: space-between;
+
+                .main-links {
+                    margin-right: 50px;
+                }
+
+                ul {
+                    li {
+                        margin: 20px 0;
+
+                        a {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .useful-info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .contacts,
+                .call,
+                .working-schedule {
+                    margin: 10px 0;
+                }
+
+                img {
+                    width: 22px;
+                    height: 22px;
+                }
+
+                .contacts {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .social-media {
+                        display: flex;
+                        margin-right: 5px;
+
+                        div {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    a {
+                        font-family: 'DIN Pro Bold', sans-serif;
+                        font-size: 20px;
+                        color: #fff;
+                    }
+                }
+
+                .call {
+                    &-button {
+                        font-family: 'DIN Pro Regular', sans-serif;
+                        font-size: 16px;
+                        border: none;
+                        outline: none;
+                        background-color: #ca3232;
+                        color: #fff;
+                        padding: 10px 16px;
+                        border-radius: 7px;
+                    }
+                }
+
+                .working-schedule {
+                    display: flex;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

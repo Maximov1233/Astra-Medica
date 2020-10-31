@@ -1,0 +1,170 @@
+@media (max-width: 1400px) {
+  .container {
+    padding: 0 10px;
+  }
+  body .header-top__mail {
+    margin-right: 0;
+  }
+  body .header-top__phone {
+    display: none;
+  }
+  body .header-top__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .header-content .header-content__nav {
+    display: none;
+  }
+  body .main .devices {
+    display: none;
+  }
+  body .main .categories-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .main .categories-list .category:first-child, body .main .categories-list .category:nth-child(2) {
+    padding-bottom: 0;
+    min-width: unset;
+  }
+  body .main .offers-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .offers-list .hot-offer {
+    margin-bottom: 20px;
+  }
+  body .main .offers-list .other-offers .offer {
+    min-width: 230px;
+  }
+  body .main .about .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .about-text {
+    text-align: center;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  body .header-top__mail {
+    display: none;
+  }
+  body .header-content__services .services-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .header-content__services .services-list .service {
+    margin: 10px;
+  }
+  body .main .offers-list .hot-offer {
+    display: none;
+  }
+  body .main .about-product {
+    display: none;
+  }
+  body .main .clients-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .main .clients-list .client-image {
+    max-width: 298px;
+    overflow: hidden;
+  }
+  body .footer {
+    text-align: center;
+  }
+  body .footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer .container .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer .container .links .main-links {
+    margin-right: 0;
+  }
+  body .footer .container .useful-info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer .container .useful-info .call {
+    display: block;
+    margin: auto;
+  }
+  body .footer .container .useful-info .working-schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .footer .container .useful-info .working-schedule img {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  body .header-top__search {
+    display: none;
+  }
+  body .header-menu__mobile {
+    width: 100%;
+  }
+  body .header-menu__mobile-nav li {
+    min-width: 100%;
+  }
+}
+/*# sourceMappingURL=media-queries.css.map */

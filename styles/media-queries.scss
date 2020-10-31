@@ -1,0 +1,184 @@
+@media (max-width: 1400px) {
+    .container {
+        padding: 0 10px;
+    }
+    body {
+        .header {
+            &-top {
+                &__mail {
+                    margin-right: 0;
+                }
+
+                &__phone {
+                    display: none;
+                }
+
+                &__menu {
+                    display: flex;
+                }
+            }
+            &-content {
+                .header-content__nav {
+                    display: none;
+                }
+            }
+        }
+
+        .main {
+            .devices {
+                display: none; //to-do
+            }
+            .categories {  
+                &-list {
+                    justify-content: center;
+
+                    .category {
+                        &:first-child,
+                        &:nth-child(2) {
+                            padding-bottom: 0;
+                            min-width: unset;
+                        }
+                    }
+                }
+            }
+
+            .offers {
+                &-list {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .hot-offer {
+                        margin-bottom: 20px;
+                    }
+                    .other-offers {
+                        .offer {
+                            min-width: 230px;
+                        }
+                    }
+                }
+            }
+
+            .about {
+                .container {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+
+                &-text {
+                    text-align: center;
+                    margin-right: 0;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    body {
+        .header {
+           &-top {
+                &__mail {
+                    display: none;
+                }
+           }
+
+           &-content {
+               &__services {
+                   .services-list {
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    .service {
+                        margin: 10px;
+                    }
+                   }
+               
+               }
+               
+           }
+        }
+        .main {
+            .offers {
+                &-list {
+                    .hot-offer {
+                        display: none; // to-do
+                    }
+                }
+            }
+            
+            .about {
+                &-product {
+                    display: none; // to-do
+                }
+            }
+
+            .clients {
+                &-list {
+                    justify-content: center;
+                    .client {
+                        &-image {
+                            max-width: 298px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+            }
+        }
+        .footer {
+            text-align: center;
+            .container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .links {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .main-links {
+                        margin-right: 0;
+                    }
+                }
+                .useful-info {
+                    justify-content: center;
+                    align-items: center;
+                    .call {
+                        display: block;
+                        margin: auto;
+                    }
+                    .working-schedule {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        img {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        .header {
+            &-top {
+                &__search {
+                    display: none;
+                }
+            }
+            &-menu__mobile {
+                width: 100%;
+                &-nav {
+                    li {
+                        min-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

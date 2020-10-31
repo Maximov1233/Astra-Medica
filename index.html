@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Medica</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__logo">
+                    <a href="/">
+                        <img src="./assets/img/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="header-top__mail">
+                    <img src="./assets/img/header/mail.svg" alt="">
+                    <a href="#">
+                        info@medica-astra.ru
+                    </a>
+                </div>
+
+                <div class="header-top__phone">
+                    <img src="./assets/img/header/phone.svg" alt="">
+                    <a href="#">
+                        8 (123) 456 78 90
+                    </a>
+                    <button class="header-button">Заказать звонок</button>
+                </div>
+
+                <div class="header-top__search">
+                    <input type="search" placeholder="Поиск по каталогу">
+                    <img src="./assets/img/header/search.svg" alt="">
+                </div>
+
+                <div class="header-top__menu">
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-content">
+            <div class="header-content__nav">
+                <div class="container">
+                    <nav>
+                        <ul class="topmenu">
+                            <li>
+                                <a href="#">Медицинская мебель</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">Кровати</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Общебольничные</a></li>
+                                            <li><a href="#">Функциональные механические</a></li>
+                                            <li><a href="#">Функциональные электрические</a></li>
+                                            <li><a href="#">Для родовспоможения</a></li>
+                                            <li><a href="#">Для новорожденных</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Тележки</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Внутрикорпусные</a></li>
+                                            <li><a href="#">Душевые</a></li>
+                                            <li><a href="#">Грузовые</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#">Столики</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Прикроватные</a></li>
+                                            <li><a href="#">Манипуляционные (процедурные)</a></li>
+                                            <li><a href="#">Инструментальные (анестезиолога)</a></li>
+                                            <li><a href="#">Пеленальные</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Прикроватные тумбочки</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Неонатология</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Кровати для новорожденных</a></li>
+                                    <li><a href="#">Пеленальные столики</a></li>
+                                    <li><a href="#">Фототерапия</a></li>
+                                    <li><a href="#">Весы</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Реанимация и хирургия</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Дефибрилляторы</a></li>
+                                    <li><a href="#">Аспираторы</a></li>
+                                    <li><a href="#">Обогрев пациентов</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Офтальмология</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Авторефкератометры</a></li>
+                                    <li><a href="#">Щелевые лампы</a></li>
+                                    <li>
+                                        <a href="#">Офтальмоскопы</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Прямые</a></li>
+                                            <li><a href="#">Непрямые</a></li>
+                                            <li><a href="#">Непрямые видеоофтальмоскопы</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Функциональная диагностика и терапия</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Спирометры</a></li>
+                                    <li><a href="#">Электрокардиографы</a></li>
+                                    <li>
+                                        <a href="#">Весы</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Для взрослых</a></li>
+                                            <li><a href="#">Для новорожденных</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Анализаторы состава тела</a></li>
+                                    <li><a href="#">Алкотестеры</a></li>
+                                    <li><a href="#">Концентраторы кислорода</a></li>
+                                    <li><a href="#">Осветители</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Реабилитация</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">Восстановление подвижности суставов</a>
+                                        <ul class="submenu">
+                                            <li><a href="#">Коленный и тазобедренны</a></li>
+                                            <li><a href="#">Голеностопный</a></li>
+                                            <li><a href="#">Локтевой</a></li>
+                                            <li><a href="#">Плечевой</a></li>
+                                            <li><a href="#">Лучезапястный</a></li>
+                                            <li><a href="#">Пальцы и суставы кисти</a></li>
+                                            <li><a href="#">Позвоночник (кинезотерапия)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Восстановление навыков ходьбы</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Уход за лежачими пациентами</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Подъемники</a></li>
+                                    <li><a href="#">Перекладывание пациентов</a></li>
+                                    <li><a href="#">Каталки и кресла для душа</a></li>
+                                    <li><a href="#">Противопролежневые матрацы </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+            <div class="header-content__services">
+                <div class="container">
+                    <div class="services-list">
+                        <div class="service">
+                            <div class="service-image">
+                                <img src="./assets/img/services/1.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <p>Помощь в подборе оборудования</p>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="service-image">
+                                <img src="./assets/img/services/2.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <p>Доставка и ввод в эксплуатацию</p>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="service-image">
+                                <img src="./assets/img/services/3.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <p>Проводим обучение персонала</p>
+                            </div>
+                        </div>
+                        <div class="service">
+                            <div class="service-image">
+                                <img src="./assets/img/services/4.svg" alt="">
+                            </div>
+                            <div class="service-text">
+                                <p>Предоставляем отсрочку платежа</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-menu__mobile">
+
+            <div class="header-menu__mobile-search">
+                <input type="search" placeholder="Поиск по каталогу">
+            </div>
+
+            <div class="header-menu__mobile-nav">
+                <nav>
+                    <ul class="topmenu">
+                        <li>
+                            <a href="#">Медицинская мебель</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">Кровати</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Общебольничные</a></li>
+                                        <li><a href="#">Функциональные механические</a></li>
+                                        <li><a href="#">Функциональные электрические</a></li>
+                                        <li><a href="#">Для родовспоможения</a></li>
+                                        <li><a href="#">Для новорожденных</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Тележки</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Внутрикорпусные</a></li>
+                                        <li><a href="#">Душевые</a></li>
+                                        <li><a href="#">Грузовые</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Столики</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Прикроватные</a></li>
+                                        <li><a href="#">Манипуляционные (процедурные)</a></li>
+                                        <li><a href="#">Инструментальные (анестезиолога)</a></li>
+                                        <li><a href="#">Пеленальные</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Прикроватные тумбочки</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Неонатология</a>
+                            <ul class="submenu">
+                                <li><a href="#">Кровати для новорожденных</a></li>
+                                <li><a href="#">Пеленальные столики</a></li>
+                                <li><a href="#">Фототерапия</a></li>
+                                <li><a href="#">Весы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Реанимация и хирургия</a>
+                            <ul class="submenu">
+                                <li><a href="#">Дефибрилляторы</a></li>
+                                <li><a href="#">Аспираторы</a></li>
+                                <li><a href="#">Обогрев пациентов</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Офтальмология</a>
+                            <ul class="submenu">
+                                <li><a href="#">Авторефкератометры</a></li>
+                                <li><a href="#">Щелевые лампы</a></li>
+                                <li>
+                                    <a href="#">Офтальмоскопы</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Прямые</a></li>
+                                        <li><a href="#">Непрямые</a></li>
+                                        <li><a href="#">Непрямые видеоофтальмоскопы</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Функциональная диагностика и терапия</a>
+                            <ul class="submenu">
+                                <li><a href="#">Спирометры</a></li>
+                                <li><a href="#">Электрокардиографы</a></li>
+                                <li>
+                                    <a href="#">Весы</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Для взрослых</a></li>
+                                        <li><a href="#">Для новорожденных</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Анализаторы состава тела</a></li>
+                                <li><a href="#">Алкотестеры</a></li>
+                                <li><a href="#">Концентраторы кислорода</a></li>
+                                <li><a href="#">Осветители</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Реабилитация</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">Восстановление подвижности суставов</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Коленный и тазобедренны</a></li>
+                                        <li><a href="#">Голеностопный</a></li>
+                                        <li><a href="#">Локтевой</a></li>
+                                        <li><a href="#">Плечевой</a></li>
+                                        <li><a href="#">Лучезапястный</a></li>
+                                        <li><a href="#">Пальцы и суставы кисти</a></li>
+                                        <li><a href="#">Позвоночник (кинезотерапия)</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Восстановление навыков ходьбы</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Уход за лежачими пациентами</a>
+                            <ul class="submenu">
+                                <li><a href="#">Подъемники</a></li>
+                                <li><a href="#">Перекладывание пациентов</a></li>
+                                <li><a href="#">Каталки и кресла для душа</a></li>
+                                <li><a href="#">Противопролежневые матрацы </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <div class="header-menu__mobile-phone">
+                <img src="./assets/img/header/phone.svg" alt="">
+                <a href="#">
+                    8 (123) 456 78 90
+                </a>
+                <button class="header-menu__mobile-button">Заказать звонок</button>
+            </div>
+
+            <div class="header-menu__mobile-mail">
+                <img src="./assets/img/header/mail.svg" alt="">
+                <a href="#">
+                    info@medica-astra.ru
+                </a>
+            </div>
+
+            <div class="header-menu__mobile-close">
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <section class="devices">
+            <div class="container">
+                <div class="devices-slider">
+                    <div class="arrow-back">
+                        <img src="./assets/img/devices/back.svg" alt="">
+                    </div>
+                    <div class="devices-window">
+                        <div class="devices-list">
+                            <div class="device">
+                                <div class="device-text">
+                                    <h1>Дефибрилляторы <br> для профессионалов <br> и рядовых сотрудников</h1>
+                                </div>
+                                <div class="device-link">
+                                    <button class="device-button"><img src="./assets/img/devices/button.png"
+                                            alt="">Смотреть</button>
+                                </div>
+                            </div>
+                            <div class="device">
+                                <div class="device-text">
+                                    <h1>Дефибрилляторы <br> для новичков <br> и рядовых сотрудников</h1>
+                                </div>
+                                <div class="device-link">
+                                    <button class="device-button"><img src="./assets/img/devices/button.png"
+                                            alt="">Смотреть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-next">
+                        <img src="./assets/img/devices/next.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="categories-list">
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Медицинская мебель</p>
+                            <div class="category-text__link">
+                                <a href="#">
+                                    Перейти
+                                    <img src="./assets/img/categories/next.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/1.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Неонатология</p>
+                            <div class="category-text__link">
+                                <a href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Реанимация и хирургия</p>
+                            <div class="category-text__link">
+                                <a href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Реабилитация</p>
+                            <div class="category-text__link">
+                                <a href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Функциональная диагностика <br> и терапия</p>
+                            <div class="category-text__link">
+                                <a href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/5.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Уход за лежачими пациентами</p>
+                            <div class="category-text__link">
+                                <a href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="category">
+                        <div class="category-text">
+                            <p>Офтальмология</p>
+                            <div class="category-text__link">
+                                <a href="#">Перейти</a>
+                            </div>
+                        </div>
+                        <div class="category-image">
+                            <img src="./assets/img/categories/7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offers">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Специальные предложения</h3>
+                </div>
+                <div class="offers-list">
+                    <div class="hot-offer">
+                        <div class="offer">
+                            <div class="offer-text">
+                                <p>Российский аналог тележки Vernipoll 20-FP648 по цене в 3 раза ниже!</p>
+                            </div>
+                            <div class="offer-image">
+                                <img src="./assets/img/offers/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="other-offers">
+                        <div class="offer">
+                            <div class="offer-wrap">
+                                <div class="offer-text">
+                                    <p>Аспиратор Dixion Vacus 7018</p>
+                                </div>
+                                <div class="offer-image">
+                                    <img src="./assets/img/offers/2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="offer-wrap">
+                                <div class="offer-text">
+                                    <p>Электрокардиограф Schiller Cardiovit AT-102</p>
+                                </div>
+                                <div class="offer-image">
+                                    <img src="./assets/img/offers/3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="offer-wrap">
+                                <div class="offer-text">
+                                    <p>Дефибриллятор Schiller FRED easy</p>
+                                </div>
+                                <div class="offer-image">
+                                    <img src="./assets/img/offers/4.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offer">
+                            <div class="offer-wrap">
+                                <div class="offer-text">
+                                    <p>Спирограф СМП-21/01-“Р-Д”</p>
+                                </div>
+                                <div class="offer-image">
+                                    <img src="./assets/img/offers/5.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about-text">
+                    <h2>Компания <br> <span>Astra</span> Medica</h2>
+                    <p>занимается продажей, поставкой и сервисом медицинского оборудования
+                        различного профиля на всей территории Российской Федерации. Наша
+                        компания является представителем ведущих иностранных и отечественных
+                        производителей медтехники, поэтому мы отвечаем за качество и уровень
+                        обслуживания. Наша команда, включая все подразделения, заинтересована
+                        в потребностях клиентов, решении их проблем, возникающих при выборе
+                        оборудования, а также в наборе клинических решений и возможностей
+                        моделей и аппаратов. Благодаря такому подходу, наши клиенты, в свою
+                        очередь, смогут предлагать качественную медицинскую диагностику и
+                        лечение своим пациентам.
+                        <br> <br> <br>
+                        Для нас важен индивидуальный подход и выстраивание долгосрочных
+                        отношений, поэтому мы предлагаем решения, которые будут оптимальными,
+                        исходя из потребностей и финансовых возможностей, для каждого клиента.</p>
+                </div>
+                <div class="about-product">
+                    <div class="about-product__text">
+                        <p>Оборудование <br> для новорожденных</p>
+                    </div>
+                    <div class="about-product__link">
+                        <button class="header-button">Смотреть <img src="./assets/img/about/arrow.svg" alt=""> </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="container">
+                <div class="section-title">
+                    <h3>Нашу репутацию мы зарабатываем здесь и сейчас</h2>
+                        <div class="section-title__bar"></div>
+                        <h3>Наши клиенты</h3>
+                </div>
+                <div class="clients-list">
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/1.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>Родильный дом № 4 г. Москва</p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/2.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>ГБУЗ ГКБ им Д.Д. Плетнёва</p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/3.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>ГБУЗ ГКБ им. В. В. Виноградова</p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/4.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>ФГБУ ГНЦ ФМБЦ им. А.И. Бурназяна</p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/5.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>ФКУЗ МСЧ МВД России по г Москве»</p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/6.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>ГБУЗ ГКБ им. Ф.И. Иноземцева</p>
+                        </div>
+                    </div>
+                    <div class="client">
+                        <div class="client-image">
+                            <img src="./assets/img/clients/7.png" alt="">
+                        </div>
+                        <div class="client-text">
+                            <p>ГБУ ПНИ №23</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="legal-info">
+                <div class="logo">
+                    <img src="./assets/img/footer/logo.png" alt="">
+                </div>
+                <div class="policy">
+                    <p>Вся информация на сайте носит информационный характер и не является публичной офертой</p>
+                    <p>
+                        © 2020 Astra Medica. Все права защищены.
+                    </p>
+                    <a href="#">
+                        Политика конфиденциальности.
+                    </a>
+                </div>
+            </div>
+            <div class="links">
+                <div class="main-links">
+                    <ul>
+                        <li>
+                            <a href="#">О компании</a>
+                        </li>
+                        <li>
+                            <a href="#">Новости</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="category-links">
+                    <ul>
+                        <li>
+                            <a href="#">Медицинская мебель</a>
+                        </li>
+                        <li>
+                            <a href="#">Неонатология</a>
+                        </li>
+                        <li>
+                            <a href="#">Реанимация и хирургия</a>
+                        </li>
+                        <li>
+                            <a href="#">Реабилитация</a>
+                        </li>
+                        <li>
+                            <a href="#">Функциональная диагностика и терапия</a>
+                        </li>
+                        <li>
+                            <a href="#">Уход за лежачими пациентами</a>
+                        </li>
+                        <li>
+                            <a href="#">Офтальмология</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="useful-info">
+                <div class="contacts">
+                    <div class="social-media">
+                        <div class="instagram">
+                            <img src="./assets/img/footer/instagram.svg" alt="">
+                        </div>
+                        <div class="whatsapp">
+                            <img src="./assets/img/footer/whatsapp.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <a href="#">+7 (123) 456 78 90</a>
+                    </div>
+                </div>
+                <div class="call">
+                    <button class="call-button">Обратный звонок</button>
+                </div>
+                <div class="working-schedule">
+                    <img src="./assets/img/footer/clock.svg" alt="">
+                    <p>Режим работы: <br> пн - пт с 09:00 до 19:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/main.js"></script>
+</body>
+
+</html>
