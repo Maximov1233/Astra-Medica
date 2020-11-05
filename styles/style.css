@@ -69,11 +69,14 @@ ul {
 }
 
 .section-title {
-  font-size: 32px;
   margin-bottom: 30px;
   text-align: center;
   color: #282828;
+}
+
+.section-title h3 {
   font-family: 'DIN Pro Light', sans-serif;
+  font-size: 32px;
 }
 
 .header-button,
@@ -343,7 +346,7 @@ body .header-menu__mobile {
   background-color: white;
   position: fixed;
   top: 0;
-  right: -315px;
+  right: -100%;
   -webkit-transition: all ease .6s;
   transition: all ease .6s;
 }

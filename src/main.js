@@ -35,7 +35,16 @@ menuButton.addEventListener('click', () => {
 });
 
 headerClose.addEventListener('click', () => {
-    headerMobile.style.right = '-315px';
+    headerMobile.style.right = '-100%';
     document.body.style.overflowY = '';
 });
+
+// navigation
+
+const nav = document.querySelector('.navigation p');
+
+nav.innerHTML
+
+
+
 

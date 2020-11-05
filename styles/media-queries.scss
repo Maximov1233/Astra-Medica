@@ -2,6 +2,7 @@
     .container {
         padding: 0 10px;
     }
+
     body {
         .header {
             &-top {
@@ -17,6 +18,7 @@
                     display: flex;
                 }
             }
+
             &-content {
                 .header-content__nav {
                     display: none;
@@ -28,11 +30,13 @@
             .devices {
                 display: none; //to-do
             }
-            .categories {  
+
+            .categories {
                 &-list {
                     justify-content: center;
 
                     .category {
+
                         &:first-child,
                         &:nth-child(2) {
                             padding-bottom: 0;
@@ -47,9 +51,11 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+
                     .hot-offer {
                         margin-bottom: 20px;
                     }
+
                     .other-offers {
                         .offer {
                             min-width: 230px;
@@ -72,6 +78,19 @@
                     margin-bottom: 50px;
                 }
             }
+
+            .contacts {
+                &-wrap {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .contacts-map {
+                        iframe {
+                            width: 300px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -79,27 +98,29 @@
 @media (max-width: 900px) {
     body {
         .header {
-           &-top {
+            &-top {
                 &__mail {
                     display: none;
                 }
-           }
+            }
 
-           &-content {
-               &__services {
-                   .services-list {
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                    .service {
-                        margin: 10px;
+            &-content {
+                &__services {
+                    .services-list {
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        align-items: center;
+
+                        .service {
+                            margin: 10px;
+                        }
                     }
-                   }
-               
-               }
-               
-           }
+
+                }
+
+            }
         }
+
         .main {
             .offers {
                 &-list {
@@ -108,7 +129,7 @@
                     }
                 }
             }
-            
+
             .about {
                 &-product {
                     display: none; // to-do
@@ -118,6 +139,7 @@
             .clients {
                 &-list {
                     justify-content: center;
+
                     .client {
                         &-image {
                             max-width: 298px;
@@ -127,37 +149,45 @@
                 }
             }
         }
+
         .footer {
             text-align: center;
+
             .container {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
                 .links {
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+
                     .main-links {
                         margin-right: 0;
                     }
                 }
+
                 .useful-info {
                     justify-content: center;
                     align-items: center;
+
                     .call {
                         display: block;
                         margin: auto;
                     }
+
                     .working-schedule {
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+
                         img {
                             margin-right: 0;
                         }
                     }
                 }
-                
+
             }
         }
     }
@@ -171,8 +201,10 @@
                     display: none;
                 }
             }
+
             &-menu__mobile {
                 width: 100%;
+
                 &-nav {
                     li {
                         min-width: 100%;
