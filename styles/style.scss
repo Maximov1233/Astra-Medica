@@ -110,6 +110,17 @@ ul {
     cursor: pointer;
 }
 
+section {
+    padding: 50px 0;  
+}
+
+.section-line {
+    margin: 20px 0;
+    min-width: 100%;
+    height: 2px;
+    background: #f1f1f1;
+}
+
 input {
     font-size: 14px;
     border: none;
@@ -117,7 +128,6 @@ input {
     border-radius: 4px;
     padding: 10px 80px 10px 15px;
     background-color: #f3f3f3;
-    // position: relative;
 
     &::placeholder {
         font-family: 'DIN Pro Regular', sans-serif;
@@ -307,6 +317,12 @@ body {
             }
         }
 
+        .navigation {
+            p, a{
+                color: #b0b0b0;
+            }    
+        }
+
         &-menu__mobile {
             width: 315px;
             height: 100%;
@@ -335,7 +351,7 @@ body {
                 cursor: pointer;
 
                 input {
-                    background-image: url(../assets/img/header/search.svg);
+                    background-image: url(../assets/img/main/header/search.svg);
                     background-position: 95% 50%;
                     background-repeat: no-repeat;
                     background-size: 18px;
@@ -390,7 +406,7 @@ body {
         margin-top: 20px;
 
         .devices {
-            background: url(../assets/img/devices/bg.png) no-repeat center;
+            background: url(../assets/img/main/devices/bg.png) no-repeat center;
             min-height: 600px;
 
             .devices-slider {
@@ -593,7 +609,7 @@ body {
                 min-width: 600px;
                 min-height: 400px;
                 padding: 20px;
-                background: url(../assets/img/about/product.png) no-repeat center;
+                background: url(../assets/img/main/about/product.png) no-repeat center;
 
                 &__text {
                     font-size: 30px;

@@ -91,6 +91,33 @@
                     }
                 }
             }
+
+            .plan {
+                .container {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    div {
+                        text-align: center;
+                    }
+                }
+            }
+
+            .partners {
+                .container {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &-image {
+                    img {
+                        max-width: 300px;
+                    }
+                }
+                &-text {
+                    text-align: center;
+                }
+            }
         }
     }
 }
@@ -115,9 +142,7 @@
                             margin: 10px;
                         }
                     }
-
                 }
-
             }
         }
 

@@ -78,6 +78,39 @@
   body .main .contacts-wrap .contacts-map iframe {
     width: 300px;
   }
+  body .main .plan .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .plan .container div {
+    text-align: center;
+  }
+  body .main .partners .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .partners-image img {
+    max-width: 300px;
+  }
+  body .main .partners-text {
+    text-align: center;
+  }
 }
 
 @media (max-width: 900px) {

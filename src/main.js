@@ -41,9 +41,9 @@ headerClose.addEventListener('click', () => {
 
 // navigation
 
-const nav = document.querySelector('.navigation p');
+// const nav = document.querySelector('.navigation p');
 
-nav.innerHTML
+// nav.innerHTML
 
 
 

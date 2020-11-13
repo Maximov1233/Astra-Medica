@@ -1,0 +1,134 @@
+.main .info {
+  background: url(../assets/img/about/bg.png) no-repeat center;
+  min-height: 500px;
+  color: #fff;
+  padding-top: 100px;
+}
+
+.main .info .section-title h3 {
+  font-family: 'DIN Pro Medium', sans-serif;
+  color: #fff;
+}
+
+.main .info .section-title h3 span {
+  color: #ca3232;
+}
+
+.main .info-text {
+  text-align: center;
+  font-size: 18px;
+  max-width: 700px;
+  margin: auto;
+}
+
+.main .info-text p {
+  margin-bottom: 20px;
+}
+
+.main .info-text p:first-child {
+  margin-bottom: 50px;
+}
+
+.main .plan {
+  color: #3e3e3e;
+}
+
+.main .plan .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .plan div p {
+  font-size: 18px;
+}
+
+.main .plan div p span {
+  color: #ca3232;
+}
+
+.main .plan div p:first-child {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.main .partners {
+  background: #f5f5f5;
+}
+
+.main .partners .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .partners-image {
+  position: relative;
+}
+
+.main .partners-image .play {
+  position: absolute;
+  bottom: 80px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #d90d22;
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+}
+
+.main .partners-image .play img {
+  position: relative;
+  z-index: 5;
+}
+
+.main .partners-image .play-shadow {
+  width: 100px;
+  height: 100px;
+  background: #d90d22;
+  border-radius: 50%;
+  opacity: 0.14;
+  z-index: 3;
+  position: absolute;
+}
+
+.main .partners-image .play img {
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+}
+
+.main .partners-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.main .partners-text p {
+  color: #6d6d6d;
+}
+
+.main .partners-text p:first-child {
+  font-family: 'DIN Pro Black', sans-serif;
+  font-size: 42px;
+  color: #282828;
+  margin-bottom: 30px;
+}
+
+.main .partners-text p:first-child span {
+  color: #d90d22;
+}
+/*# sourceMappingURL=about.css.map */
