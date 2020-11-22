@@ -1,9 +1,23 @@
-<header class="header">
+<?php echo '
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra Medica</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
+    <link rel="shortcut icon" href="./assets/img/main/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
 
         <div class="header-top">
             <div class="container">
                 <div class="header-top__logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img src="./assets/img/main/logo.png" alt="">
                     </a>
                 </div>
@@ -193,19 +207,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="section-line"></div>
-                    <div class="navigation">
-                        <div class="container">
-                            <p><a href="index.html">Главная</a> > <a href="about.html">О компании</a></p>
-                        </div>
-                    </div>
                 </div>
             </div>
-
         </div>
-
-
-
+        
         <div class="header-menu__mobile">
 
             <div class="header-menu__mobile-search">
@@ -349,7 +354,7 @@
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-
         </div>
-
+     
     </header>
+   '; ?>
