@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astra Medica</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/contacts.css">
+    <link rel="stylesheet" href="./styles/news.css">
     <link rel="stylesheet" href="./styles/media-queries.css">
     <link rel="shortcut icon" href="./assets/img/main/favicon.ico" type="image/x-icon">
 </head>

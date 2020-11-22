@@ -19,13 +19,13 @@
             <div class="main-links">
                 <ul>
                     <li>
-                        <a href="about.html">О компании</a>
+                        <a href="about.php">О компании</a>
                     </li>
                     <li>
-                        <a href="#">Новости</a>
+                        <a href="news.php">Новости</a>
                     </li>
                     <li>
-                        <a href="./contancts.html">Контакты</a>
+                        <a href="contancts.php">Контакты</a>
                     </li>
                 </ul>
             </div>

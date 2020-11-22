@@ -1,0 +1,37 @@
+body .news .section-title {
+  text-align: left;
+}
+
+body .news-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .news-list .item {
+  max-width: 290px;
+  margin: 16px 0;
+}
+
+body .news-list .item div {
+  margin-bottom: 20px;
+}
+
+body .news-list .item-date {
+  color: #bebebe;
+}
+
+body .news-list .item-text {
+  font-family: 'DIN Pro Medium', sans-serif;
+  font-size: 17px;
+  color: #282828;
+}
+/*# sourceMappingURL=news.css.map */
